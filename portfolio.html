@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gianni's Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stained-glass-overlay"></div>
+    
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Gianni</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="glass-panel portfolio-hero-panel">
+                <h1 class="page-title">My Portfolio</h1>
+                <p class="page-subtitle">A collection of projects showcasing technical skills, research capabilities, and creative problem-solving</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="systems">Systems Design</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="projects-container">
+                    
+                    <article id="biometric" class="glass-panel project-card" data-category="research">
+                        <div class="project-header">
+                            <h2>Biometric Border Security Systems</h2>
+                            <span class="project-category">Research Paper</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/biometric-project.svg" alt="Biometric security system visualization">
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Comprehensive analysis examining the balance between security enhancement and privacy 
+                                concerns in modern biometric border control systems. This research paper explores the 
+                                ethical implications, technical implementations, and societal impact of biometric 
+                                technology in national security contexts.
+                            </p>
+                            <h3>Key Contributions</h3>
+                            <ul class="project-highlights">
+                                <li>Analyzed 15+ academic sources on biometric technology and privacy law</li>
+                                <li>Evaluated multiple biometric modalities including facial recognition and fingerprinting</li>
+                                <li>Proposed framework for balancing security needs with civil liberties</li>
+                                <li>Examined case studies from US, EU, and Asian implementations</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Academic Research</span>
+                                <span class="tech-tag">Policy Analysis</span>
+                                <span class="tech-tag">Ethics</span>
+                                <span class="tech-tag">Security Systems</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="misinformation" class="glass-panel project-card" data-category="research">
+                        <div class="project-header">
+                            <h2>Misinformation Dynamics in Online Forums</h2>
+                            <span class="project-category">Research Design</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Developed comprehensive research methodology to study how misinformation spreads through 
+                                online communities, with particular focus on Reddit and Quora platforms. This project 
+                                combines qualitative coding techniques with quantitative analysis to understand the 
+                                viral nature of false information.
+                            </p>
+                            <h3>Research Methodology</h3>
+                            <ul class="project-highlights">
+                                <li>Designed mixed-methods approach combining content analysis and network mapping</li>
+                                <li>Created coding scheme for categorizing misinformation types and spread patterns</li>
+                                <li>Developed interview protocols for platform moderators and users</li>
+                                <li>Established metrics for measuring information credibility and virality</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Qualitative Methods</span>
+                                <span class="tech-tag">Content Analysis</span>
+                                <span class="tech-tag">Social Media</span>
+                                <span class="tech-tag">Data Collection</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="healthtech" class="glass-panel project-card" data-category="research">
+                        <div class="project-header">
+                            <h2>Wearable Health Device Adoption Study</h2>
+                            <span class="project-category">Survey Research</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Designed and implemented comprehensive survey research examining factors influencing 
+                                wearable health technology adoption, with emphasis on security concerns and demographic 
+                                differences. Applied advanced survey methodology to minimize response bias and ensure 
+                                statistical validity.
+                            </p>
+                            <h3>Project Achievements</h3>
+                            <ul class="project-highlights">
+                                <li>Developed 40-question survey instrument with validated scales</li>
+                                <li>Implemented strategies to reduce social desirability and acquiescence bias</li>
+                                <li>Created demographic segmentation analysis framework</li>
+                                <li>Produced actionable insights for healthcare technology providers</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Survey Design</span>
+                                <span class="tech-tag">Statistical Analysis</span>
+                                <span class="tech-tag">Health Informatics</span>
+                                <span class="tech-tag">User Research</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel project-card" data-category="web">
+                        <div class="project-header">
+                            <h2>EDC Corporate Website</h2>
+                            <span class="project-category">Web Development</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Built modern, responsive corporate website using 11ty static site generator with 
+                                emphasis on performance and accessibility. Implemented custom templating system and 
+                                created cohesive design language across multiple page types.
+                            </p>
+                            <h3>Technical Implementation</h3>
+                            <ul class="project-highlights">
+                                <li>Developed custom 11ty templates and data pipeline</li>
+                                <li>Achieved 98+ Lighthouse scores for performance and accessibility</li>
+                                <li>Implemented responsive grid system with CSS Grid and Flexbox</li>
+                                <li>Created reusable component library for consistent UI elements</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">11ty</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel project-card" data-category="systems">
+                        <div class="project-header">
+                            <h2>Customer Service System Design</h2>
+                            <span class="project-category">Systems Analysis</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Designed comprehensive customer service management system using industry-standard 
+                                modeling techniques. Created detailed documentation including entity-relationship 
+                                diagrams, data flow diagrams, and system specifications following strict academic 
+                                conventions.
+                            </p>
+                            <h3>Deliverables</h3>
+                            <ul class="project-highlights">
+                                <li>Developed complete ER diagram with 12+ entities and relationships</li>
+                                <li>Created multi-level DFDs showing system processes and data stores</li>
+                                <li>Documented functional and non-functional requirements</li>
+                                <li>Designed database schema with normalization to 3NF</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">ER Diagrams</span>
+                                <span class="tech-tag">DFD</span>
+                                <span class="tech-tag">Database Design</span>
+                                <span class="tech-tag">System Documentation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel project-card" data-category="web">
+                        <div class="project-header">
+                            <h2>Interactive Landing Page</h2>
+                            <span class="project-category">Frontend Development</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Created dynamic landing page with modern CSS animations and JavaScript interactivity. 
+                                Focused on conversion optimization through thoughtful UX design and A/B testing 
+                                implementation.
+                            </p>
+                            <h3>Features Implemented</h3>
+                            <ul class="project-highlights">
+                                <li>Smooth scroll animations and parallax effects</li>
+                                <li>Interactive form validation with real-time feedback</li>
+                                <li>Mobile-first responsive design approach</li>
+                                <li>Performance optimization for sub-2-second load times</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel project-card" data-category="systems">
+                        <div class="project-header">
+                            <h2>Patient Reminder App Architecture</h2>
+                            <span class="project-category">Health Informatics</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Architected patient appointment reminder system using Airtable and Softr platforms. 
+                                Designed database structure, automated workflows, and user interface for healthcare 
+                                providers to manage patient communications effectively.
+                            </p>
+                            <h3>System Components</h3>
+                            <ul class="project-highlights">
+                                <li>Designed relational database for patient and appointment data</li>
+                                <li>Implemented automated SMS and email reminder workflows</li>
+                                <li>Created provider dashboard for appointment management</li>
+                                <li>Developed HIPAA-compliant data handling procedures</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Airtable</span>
+                                <span class="tech-tag">Softr</span>
+                                <span class="tech-tag">Workflow Automation</span>
+                                <span class="tech-tag">Healthcare IT</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel project-card" data-category="research">
+                        <div class="project-header">
+                            <h2>HBO Max Rebranding Analysis</h2>
+                            <span class="project-category">Business Analysis</span>
+                        </div>
+                        <div class="project-content">
+                            <p>
+                                Conducted comprehensive case study on HBO's streaming service rebranding strategy, 
+                                applying change management theories and frameworks including Six Thinking Hats and 
+                                organizational ambidexterity concepts.
+                            </p>
+                            <h3>Analysis Framework</h3>
+                            <ul class="project-highlights">
+                                <li>Applied Kotter's 8-step change management model</li>
+                                <li>Evaluated brand equity impact using customer perception data</li>
+                                <li>Analyzed competitive positioning in streaming market</li>
+                                <li>Developed recommendations for future brand transitions</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Business Strategy</span>
+                                <span class="tech-tag">Change Management</span>
+                                <span class="tech-tag">Market Analysis</span>
+                                <span class="tech-tag">Case Study</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-cta">
+            <div class="glass-panel cta-panel">
+                <h2>Interested in Working Together?</h2>
+                <p>I'm always excited to discuss new projects and opportunities. Let's create something amazing together.</p>
+                <a href="resume.html" class="btn btn-primary">View My Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Gianni's Portfolio. Crafted with passion and precision.</p>
+            <p>Michigan State University | Information Science</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

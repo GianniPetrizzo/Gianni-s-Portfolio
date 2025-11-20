@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gianni's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stained-glass-overlay"></div>
+    
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Gianni</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="glass-panel about-hero-panel">
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">Passionate about creating meaningful digital experiences through technology and design</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="glass-panel about-main">
+                        <h2>My Journey</h2>
+                        <p>
+                            As a senior Information Science major at Michigan State University, I've discovered my passion 
+                            lies at the intersection of technology, design, and human experience. My journey began with a 
+                            curiosity about how systems work and evolved into a deep commitment to creating solutions that 
+                            make a real difference in people's lives.
+                        </p>
+                        <p>
+                            Through my coursework in systems analysis, web development, and research methodology, I've 
+                            developed a unique perspective on solving complex problems. I believe that the best solutions 
+                            come from understanding both the technical requirements and the human needs behind every project.
+                        </p>
+                        <p>
+                            My approach combines rigorous analytical thinking with creative problem-solving. Whether I'm 
+                            designing a database schema, conducting user research, or building a responsive website, I 
+                            focus on creating elegant solutions that are both functional and user-friendly.
+                        </p>
+
+                        <h2>What Drives Me</h2>
+                        <p>
+                            I'm fascinated by the way technology can transform ideas into reality. Every project is an 
+                            opportunity to learn something new and push the boundaries of what's possible. I thrive in 
+                            environments where innovation is encouraged and collaboration is valued.
+                        </p>
+                        <p>
+                            Beyond the code and systems, I'm driven by the impact of my work. Whether it's improving 
+                            security systems while protecting privacy, combating misinformation online, or making health 
+                            technology more accessible, I'm committed to projects that matter.
+                        </p>
+                    </div>
+
+                    <div class="about-sidebar">
+                        <div class="glass-panel skills-panel">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-category">
+                                <h4>Web Development</h4>
+                                <ul class="skill-list">
+                                    <li>HTML5 & Semantic Markup</li>
+                                    <li>CSS3 & Responsive Design</li>
+                                    <li>JavaScript & ES6+</li>
+                                    <li>Bootstrap Framework</li>
+                                    <li>11ty Static Site Generator</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Systems & Analysis</h4>
+                                <ul class="skill-list">
+                                    <li>Entity-Relationship Diagrams</li>
+                                    <li>Data Flow Diagrams</li>
+                                    <li>Database Design</li>
+                                    <li>PERT Network Analysis</li>
+                                    <li>Airtable & Softr</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Research Methods</h4>
+                                <ul class="skill-list">
+                                    <li>Qualitative Analysis</li>
+                                    <li>Survey Design</li>
+                                    <li>Interview Techniques</li>
+                                    <li>Statistical Analysis</li>
+                                    <li>Academic Writing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="glass-panel education-panel">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <h4>Michigan State University</h4>
+                                <p class="degree">B.S. Information Science</p>
+                                <p class="graduation">Expected Graduation: 2025</p>
+                                <p class="coursework">
+                                    Relevant Coursework: Systems Analysis & Design, 
+                                    Web Development, Research Methodology, Health Informatics, 
+                                    Database Design, Project Management
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="glass-panel interests-panel">
+                            <h3>Interests & Values</h3>
+                            <ul class="interest-list">
+                                <li>Clean, functional design</li>
+                                <li>Privacy-conscious technology</li>
+                                <li>Accessible user interfaces</li>
+                                <li>Evidence-based decision making</li>
+                                <li>Continuous learning</li>
+                                <li>Collaborative problem-solving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy">
+            <div class="glass-panel philosophy-panel">
+                <h2>My Philosophy</h2>
+                <blockquote>
+                    "Technology should serve humanity, not the other way around. Every line of code, 
+                    every system design, and every research insight should contribute to making the 
+                    world a little bit better, a little more connected, and a little more understood."
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Gianni's Portfolio. Crafted with passion and precision.</p>
+            <p>Michigan State University | Information Science</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
