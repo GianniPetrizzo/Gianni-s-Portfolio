@@ -316,6 +316,28 @@ a:hover {
     height: auto;
     display: block;
 }
+.hero-image:hover img {
+    transform: scale(1.05);
+    transition: transform var(--transition-slow);
+}
+/* ================================================
+   Centered Glass-panel Hero Variants
+   ================================================ */
+.glass-panel.portfolio-hero-panel,
+.glass-panel.resume-hero-panel,
+.glass-panel.about-hero-panel {
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    flex-direction: column;   
+    text-align: center;       
+    width: 100%;
+    max-width: calc(1100px + var(--spacing-xl));
+    margin: var(--spacing-md) auto; 
+    
+    padding: var(--spacing-lg);
+    min-height: 160px;
+}
 
 /* ================================================
    Buttons
