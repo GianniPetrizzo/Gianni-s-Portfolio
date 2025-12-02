@@ -831,7 +831,6 @@ footer {
         rgba(44, 44, 44, 1));
     color: white;
     padding: var(--spacing-xl) var(--spacing-lg);
-    text-align: center;
     border-top: 4px solid var(--lead-lines);
     position: relative;
     z-index: 2;
@@ -844,6 +843,7 @@ footer {
 
 .footer-content p {
     margin: 0; 
+    text-align: center;
 }
 
 /* ================================================
