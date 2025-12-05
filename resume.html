@@ -37,7 +37,7 @@
                 <h1 class="page-title">Resume</h1>
                 <p class="page-subtitle">Information Science Professional | Web Developer | Systems Analyst</p>
                 <div class="resume-actions">
-                    <button class="btn btn-primary" onclick="window.print()">Download PDF</button>
+                    <button id="print-resume" class="btn btn-primary">Download PDF</button>
                 </div>
             </div>
         </section>
@@ -269,12 +269,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
