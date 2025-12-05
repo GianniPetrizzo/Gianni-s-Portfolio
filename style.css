@@ -1068,7 +1068,8 @@ footer {
 }
 
 /* High contrast mode support */
-@media (prefers-contrast: high) {
+
+@media (prefers-contrast: more), (prefers-contrast: forced) {
     .glass-panel {
         border-width: 4px;
     }
