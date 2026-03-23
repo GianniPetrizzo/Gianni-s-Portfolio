@@ -826,6 +826,24 @@ section {
     color: var(--text-secondary);
 }
 
+.resume-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xl);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resume-image {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 3px solid var(--lead-lines);
+}
+
 /* ================================================
    CTA Sections
    ================================================ */

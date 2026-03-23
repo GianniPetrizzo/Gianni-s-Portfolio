@@ -40,9 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Resume print/download button handler (if present)
+  // Resume download button handler (if present)
   const printBtn = document.getElementById('print-resume');
   if (printBtn) {
-    printBtn.addEventListener('click', () => window.print());
+    printBtn.addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = 'Resume.pdf';
+      link.download = 'Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   }
 });
