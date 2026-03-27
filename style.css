@@ -218,6 +218,12 @@ a:hover {
     pointer-events: none; /* don't block clicks on nav items */
 }
 
+/* Hide project document links until ready to display PDFs */
+.project-docs {
+    display: none !important;
+}
+
+
 @media (max-width: 768px) {
     .nav-center-logo { height: 44px; }
 }

@@ -14,30 +14,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectCards = document.querySelectorAll('.project-card');
 
   if (filterButtons.length && projectCards.length) {
+    const applyFilter = (filter) => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      const activeBtn = Array.from(filterButtons).find(btn => btn.getAttribute('data-filter') === filter);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      projectCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
+        }
+      });
+    };
+
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
         const filter = button.getAttribute('data-filter');
-
-        projectCards.forEach(card => {
-          if (filter === 'all' || card.getAttribute('data-category') === filter) {
-            card.style.display = 'block';
-            setTimeout(() => {
-              card.style.opacity = '1';
-              card.style.transform = 'translateY(0)';
-            }, 10);
-          } else {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            setTimeout(() => {
-              card.style.display = 'none';
-            }, 300);
-          }
-        });
+        applyFilter(filter);
       });
     });
+
+    applyFilter('all');
   }
 
   // Resume download button handler (if present)
