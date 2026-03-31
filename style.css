@@ -508,6 +508,13 @@ section {
 
 .work-card h3 {
     margin-bottom: var(--spacing-md);
+    color: var(--glass-sapphire);
+}
+
+.work-card p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 .link-arrow {
@@ -651,10 +658,22 @@ section {
     margin-left: var(--spacing-md);
 }
 
+.skill-list li {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+    padding-left: var(--spacing-sm);
+}
+
 .skill-list li::before {
     content: '◈ ';
     color: var(--glass-ruby);
     margin-right: var(--spacing-xs);
+}
+
+.skill-list strong {
+    display: inline-block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--glass-sapphire);
 }
 
 .education-item {
@@ -982,6 +1001,16 @@ footer {
     .btn {
         width: 100%;
         max-width: 300px;
+    }
+    
+    .skill-list {
+        margin-left: 0;
+    }
+    
+    .skill-list li {
+        padding-left: 0;
+        margin-bottom: var(--spacing-sm);
+        font-size: calc(var(--font-base) * 0.9);
     }
 }
 
